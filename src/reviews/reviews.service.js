@@ -12,10 +12,12 @@ async function destroy(reviewId) {
 }
 
 const reduceReviews = reduceProperties("critic_id", {
-  critic_id: ["critic", null, "critic_id"],
-  preferred_name: ["critic", null, "preferred_name"],
-  surname: ["critic", null, "surname"],
-  organization_name: ["critic", null, "organization_name"],
+    critic_id: ["critic", null, "critic_id"],
+    preferred_name: ["critic", null, "preferred_name"],
+    surname: ["critic", null, "surname"],
+    organization_name: ["critic", null, "organization_name"],
+    created_at: ["critic", null, "created_at"],
+    updated_at: ["critic", null, "updated_at"],
 });
 
 async function list(movie_id) {
